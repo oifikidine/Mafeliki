@@ -12,8 +12,11 @@
     </header>
 
      <nav>
-            <a href="#article1" class="navbar">FENESSI(JACQUE)</a>
+            
+                <a href="#article1" class="navbar">FENESSI(JACQUE)</a>
             <a href="#article2" class="navbar" >MATABA(FEUILLE DE MANIOC)</a>
+             <a href="#form-section" class="navbar nav-button">Acceder au Formulaire</a>
+            
         </nav>
 
     <section id="slider">
@@ -51,6 +54,22 @@
 
        <br>
 
+       <section>
+        <div class="video-container">
+            <!-- <iframe width="560"height="315"
+                    src="https://www.youtube.com/embed/KutLIUkhwZ8">
+                </iframe>  -->
+                <iframe
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+        </div>
+       </section>
+
+       <br>
        <section id="table-section">
         
         <table>
@@ -82,6 +101,58 @@
             </tr>
         </table>
     </section>
+    <ul>
+       <strong>
+        <caption> fruits et légume vendu</caption>
+    </strong>
+        <li>Mataba</li>
+        <li>Fenessi</li>
+    </ul>
+
+    <section id="form-section">
+    <h2>Formulaire de contact</h2>
+
+    <form> <!--début de formaire-->
+
+        <!--ici je créé  case dans mon formulaire pour rensegner le nom du visiteur -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <!--ici je crée une case dans mon formulaire pour rensegner le prénom du visiteur -->
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <!--ici je crée une case dans mon formulaire pour rensegner l'email du visiteur -->
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <!--ici je crée une case dans mon formulaire pour rensegner numéro de téléphone -->
+        <label for="telephone">Numéro de téléphone :</label>
+        <input type="tel" id="telephone" name="telephone">
+
+        <!--ici je crée une  case dans mon formulaire pour rensegner le village du viisiteur -->
+        <label for="village">Village :</label>
+        <input type="text" id="village" name="village">
+
+      <!--ici je crée une case dans mon formulaire pour renseigner les fruits et légumes souhaités-->  
+        <label for="produits">Fruits et légumes souhaités :</label>
+        <select id="produits" name="produits">
+            <option value="jacque">Jacque</option>
+            <option value="mataba">Mataba</option>
+            <option value="papaye">Papaye</option>
+            <option value="banane">Banane</option>
+            <option value="autres">Autres</option>
+        </select>
+
+
+        <!--ici je crée un espace de texte dans mon formulaire pour rensegner le commentaire -->
+        <label for="commentaire">Commentaire :</label>
+        <textarea id="commentaire" name="commentaire" rows="4"></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form><!--fin de formulaire-->
+</section>
+    
     <footer>
         <p>Pour plus d'information retrouvez nous sur notre page <a href="https://www.facebook.com/TropicalConceptMayotte/?locale=fr_FR">facebook</a></p>
     </footer>

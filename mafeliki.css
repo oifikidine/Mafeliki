@@ -34,7 +34,7 @@ tr:nth-child(even) {
 }
 
 header{
-    background: #eef3ff;
+    background: #eee2df;
     padding: 40px;
     text-align: center;
 }
@@ -59,19 +59,19 @@ header{
 nav{
     display: flex;
     justify-content: center;
-    gap: 20px;
-    background: whitesmoke;
+    gap: 50px;
+    background: #eed7c5;
     padding: 10px 20px;
 }
 
 body {
    margin: 0;
-    background: #eef3ff;
+    background: #eee2df;
     height: 100vh; 
 }
 
 .navbar{
-
+    
     text-decoration: none;
     font-size: 18px;
     color: black;
@@ -80,7 +80,6 @@ body {
 
 .navbar:hover{
     transform: scale(1.2);
-    color: blue;
 }
 
 
@@ -140,7 +139,7 @@ article p{
 /* TABLEAU (nouvelle section) */
 #table-section {
     padding: 20px;
-    background: white;
+    background:#eed7c5;
 }
 
 table {
@@ -156,4 +155,109 @@ td, caption {
 
 footer{
     text-align: center;
+}
+
+ul{
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+/* SECTION FORMULAIRE */
+#form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* centre horizontalement */
+    padding: 40px 20px;
+    background: #C89F9C;       /* léger fond pour bien séparer */
+    margin-top: 30px;
+}
+
+#form-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* FORMULAIRE */
+form {
+    width: 90%;
+    max-width: 600px;          /* limite la taille maxi */
+    background: #CA7C5C;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* petite ombre pour élégance */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;                  /* espace entre les champs */
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* BOUTON ENVOYER */
+form button {
+    background: #B36A5E;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #B36A5E;
+    transform: scale(1.05);
+}
+
+.nav-button {
+    background: #B36A5E;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background: #B36A5E;
+    transform: scale(1.05);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-container::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16/9 */
 }
